@@ -12,106 +12,100 @@
 </head>
 <body>
   <header class="header">
-    <div class="header-section__container">
-      <div class="header-nav-container">
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-            <div class="header-nav__list-first">
-              <li id="header-nav__title"><a href="#" class="main--title">Lamborghini Huracán</a></li>
-            </div>
-            <div class="header-nav__list-second">
-              <li class="header-nav__list-item"><a href="#header-nav__list-item" class="nav-title">Home</a></li>
-              <li class="header-nav__list-item"><a href="#history" class="nav-title">History</a></li>
-              <li class="header-nav__list-item"><a href="#gallery-header" class="nav-title">Gallery</a></li>
-            </div>
-          </ul>
-        </nav>
+    <nav class="navbar">
+      <div class="logo">Lamborghini</div>
+      <input type="radio" id="menu-open" name="menu-toggle" class="menu-toggle">
+      <input type="radio" id="menu-close" name="menu-toggle" class="menu-toggle">
+
+      <label for="menu-open" class="menu-label">
+          <span></span>
+          <span></span>
+          <span></span>
+      </label>
+
+      <div class="menu">
+          <label for="menu-close" class="close-label">✖</label>
+          <a href="#hero" class="nav-title">Home</a>
+          <a href="#history" class="nav-title">History</a>
+          <a href="#gallery-header" class="nav-title">Gallery</a>
       </div>
-      <div class="header-section__content-container">
-        <h1 class="header-section__title">Lamborghini <span>Huracán</span></h1>
-        <p class="header-section-content">Discover the Lamborghini Huracán – a fusion of power, precision, and Italian craftsmanship. With its thrilling V10 engine and cutting-edge technology, the Huracán delivers an unmatched driving experience. Elevate your journey with a supercar that defines luxury and performance.</p>
-        <a href="#gallery-header" class="button-container"> 
-          <label class="header-section__button" role="button">View Gallery</label>
-        </a>
-      </div>
-    </div>
+    </nav>
   </header>
   
   <main class="main-content">
+    <section id="hero" class="hero-container">
+      <h1 class="hero-section__title">Lamborghini <span>Huracán</span></h1>
+      <p class="hero-section-content">Experience the Lamborghini Huracán—where power, precision, and Italian craftsmanship meet. With a thrilling V10 and cutting-edge tech, it redefines luxury and performance.</p>
+      <a href="#gallery-header" class="hero-btn">View Gallery</a>
+    </section>
+
     <div class="main-content__grid-wrapper">
-      <div class="main-content__wrapped"></div>
       <div class="main-content__wrapped">
         <div class="main-content__wrapped-text">
           <h2 id="history">History</h2>
-          <p class="main-content__text">The <strong>Lamborghini Huracán</strong> made its debut in 2014, replacing the iconic Gallardo as Lamborghini's entry-level supercar. Named after a Spanish fighting bull, the Huracán blends cutting-edge technology with raw power. Powered by a 5.2-liter V10 engine, it quickly became known for its stunning performance, reaching speeds of over 200 mph. Over the years, Lamborghini has introduced various versions, including the Performante and Evo, each pushing the boundaries of design and driving dynamics, solidifying the Huracán as a symbol of automotive excellence.</p>
+          <p class="main-content__text">The <strong>Lamborghini Huracán</strong> made its debut in 2014, replacing the iconic Gallardo as Lamborghini's entry-level supercar. Named after a Spanish fighting bull, the Huracán blends cutting-edge technology with raw power. <span>Powered by a 5.2-liter V10 engine, it quickly became known for its stunning performance, reaching speeds of over 200 mph. Over the years, Lamborghini has introduced various versions, including the Performante and Evo, each pushing the boundaries of design and driving dynamics, solidifying the Huracán as a symbol of automotive excellence.</span></p>
         </div>
       </div>
+      <div class="main-content__wrapped"><img class="main-grid-img" src="images/lambo2.webp" alt="lamborghini huracan"></div>
       <div class="main-content__wrapped">
         <div class="main-content__wrapped-text">
           <h2>Features</h2>
-          <p class="main-content__text">The Lamborghini Huracán combines a 5.2-liter V10 engine with up to 640 horsepower, delivering thrilling speed and precision handling. It features advanced all-wheel or rear-wheel drive, dynamic steering, and carbon-ceramic brakes for exceptional performance. Inside, a luxurious cockpit with cutting-edge tech and customizable driving modes offers a personalized driving experience. The <strong>Huracán</strong> is the ultimate fusion of power, agility, and luxury.</p>
+          <p class="main-content__text">The Lamborghini Huracán combines a 5.2-liter V10 engine with up to 640 horsepower, delivering thrilling speed and precision handling. It features advanced all-wheel or rear-wheel drive, dynamic steering, and carbon-ceramic brakes for exceptional performance. <span>Inside, a luxurious cockpit with cutting-edge tech and customizable driving modes offers a personalized driving experience. The <strong>Huracán</strong> is the ultimate fusion of power, agility, and luxury.</span></p>
         </div>
       </div>
-      <div class="main-content__wrapped"></div>
+      <div class="main-content__wrapped"><img class="main-grid-img" src="images/lambo3.webp" alt="lamborghini huracan"></div>
     </div>
+
+    <section class="section-gallery">
+      <h2 id="gallery-header">Gallery</h2>
+      <div class="gallery-wrapper">
+        <div class="grid-item"><img src="images/lambo6.webp" alt="lamborghini huracan"></div>
+        <div class="grid-item"><img src="images/lambo5.webp" alt="lamborghini huracan"></div>
+        <div class="grid-item"><img src="images/lambo4.webp" alt="lamborghini huracan"></div>
+        <div class="grid-item"><img src="images/lambo1.webp" alt="lamborghini huracan"></div>
+      </div>
+      <a href="#" class="view-more-btn">View More</a>
+    </section>
   </main>
 
-  <section class="section-gallery">
-    <h2 id="gallery-header">Gallery</h2>
-    <div class="gallery-wrapper">
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-    </div>
-    <div class="view-more-help">
-      <a href="#" class="view-more-container"> 
-        <label for="view-more-container" class="grid__button" role="button">View More</label>
-      </a>
-    </div>
-  </section>
-
   <footer class="footer">
-      <ul class="footer__list">
-        <div class="footer__list-first">
-          <li class="footer__list-item">
-            <h3>Lamborghini <span>Huracán</span></h3>
-            <p class="footer-content">
-              Experience the thrill of the Lamborghini Huracán – where performance, luxury, and innovation meet. Discover more and join the legacy of automotive excellence.</p>
-          </li>
-        </div>
-        <div class="footer__list-second">
-          <li class="footer__list-item quick--links">
-            <div class="footer-subttl">Quick Links</div>
-            <a href="#header-nav__list-item" class="quick-links">Home</a>
-            <a href="#history" class="quick-links">History</a>
-            <a href="#gallery-header" class="quick-links">Gallery</a>
-          </li>
-          <li class="footer__list-item socials--item">
-            <div class="footer-subttl">Contact</div>
-            <a href="#" class="quick-links">huracan@lamborghini.com</a>
-            <div class="socials-container">
-              <a href="https://www.facebook.com/Lamborghini" class="social-media">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
-                  <g fill="#f2f2f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,2c-5.523,0 -10,4.477 -10,10c0,5.013 3.693,9.153 8.505,9.876v-7.226h-2.474v-2.629h2.474v-1.749c0,-2.896 1.411,-4.167 3.818,-4.167c1.153,0 1.762,0.085 2.051,0.124v2.294h-1.642c-1.022,0 -1.379,0.969 -1.379,2.061v1.437h2.995l-0.406,2.629h-2.588v7.247c4.881,-0.661 8.646,-4.835 8.646,-9.897c0,-5.523 -4.477,-10 -10,-10z"></path></g></g>
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/lamborghini/" class="social-media">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
-                  <g fill="#f2f2f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M8,3c-2.761,0 -5,2.239 -5,5v8c0,2.761 2.239,5 5,5h8c2.761,0 5,-2.239 5,-5v-8c0,-2.761 -2.239,-5 -5,-5zM18,5c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM12,7c2.761,0 5,2.239 5,5c0,2.761 -2.239,5 -5,5c-2.761,0 -5,-2.239 -5,-5c0,-2.761 2.239,-5 5,-5zM12,9c-1.65685,0 -3,1.34315 -3,3c0,1.65685 1.34315,3 3,3c1.65685,0 3,-1.34315 3,-3c0,-1.65685 -1.34315,-3 -3,-3z"></path></g></g>
-                </svg>
-              </a>
-              <a href="https://x.com/Lamborghini" class="social-media">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
-                  <g fill="#f2f2f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M2.86719,3l6.86914,9.81836l-7.00195,8.18164h2.64648l5.53906,-6.49023l4.54102,6.49023h5.91016l-7.19727,-10.30273l6.57031,-7.69727h-2.60547l-5.14258,6.00977l-4.19727,-6.00977z"></path></g></g>
-                </svg>
-              </a>
-            </div>
-          </li>
-        </div>
-      </ul>
+    <section class="footer__about">
+      <h3>Lamborghini <span>Huracán</span></h3>
+      <p>
+        Experience the thrill of the Lamborghini Huracán – where performance, luxury, and innovation meet. Discover more and join the legacy of automotive excellence.
+      </p>
+    </section>
+    <section class="footer__quick-links">
+      <h4>Quick Links</h4>
+      <nav>
+        <a href="#header-nav__list-item" class="quick-links">Home</a>
+        <a href="#history" class="quick-links">History</a>
+        <a href="#gallery-header" class="quick-links">Gallery</a>
+      </nav>
+    </section>
+    <section class="footer__socials">
+      <h4>Connect with Us</h4>
+      <a href="#" class="quick-links">huracan@lamborghini.com</a>
+      <div class="socials-container">
+        <a href="https://www.facebook.com/Lamborghini" class="social-media">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+            <g fill="#f2f2f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,2c-5.523,0 -10,4.477 -10,10c0,5.013 3.693,9.153 8.505,9.876v-7.226h-2.474v-2.629h2.474v-1.749c0,-2.896 1.411,-4.167 3.818,-4.167c1.153,0 1.762,0.085 2.051,0.124v2.294h-1.642c-1.022,0 -1.379,0.969 -1.379,2.061v1.437h2.995l-0.406,2.629h-2.588v7.247c4.881,-0.661 8.646,-4.835 8.646,-9.897c0,-5.523 -4.477,-10 -10,-10z"></path></g></g>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/lamborghini/" class="social-media">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+            <g fill="#f2f2f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M8,3c-2.761,0 -5,2.239 -5,5v8c0,2.761 2.239,5 5,5h8c2.761,0 5,-2.239 5,-5v-8c0,-2.761 -2.239,-5 -5,-5zM18,5c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM12,7c2.761,0 5,2.239 5,5c0,2.761 -2.239,5 -5,5c-2.761,0 -5,-2.239 -5,-5c0,-2.761 2.239,-5 5,-5zM12,9c-1.65685,0 -3,1.34315 -3,3c0,1.65685 1.34315,3 3,3c1.65685,0 3,-1.34315 3,-3c0,-1.65685 -1.34315,-3 -3,-3z"></path></g></g>
+          </svg>
+        </a>
+        <a href="https://x.com/Lamborghini" class="social-media">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+            <g fill="#f2f2f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M2.86719,3l6.86914,9.81836l-7.00195,8.18164h2.64648l5.53906,-6.49023l4.54102,6.49023h5.91016l-7.19727,-10.30273l6.57031,-7.69727h-2.60547l-5.14258,6.00977l-4.19727,-6.00977z"></path></g></g>
+          </svg>
+        </a>
+      </div>
+    </section>
   </footer>
 
-
+  <script src="script.js"></script>
 </body>
 </html>
